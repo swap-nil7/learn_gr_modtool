@@ -40,8 +40,9 @@ namespace gr {
      */
     square_ff_impl::square_ff_impl()
       : gr::block("square_ff",
-              gr::io_signature::make(<+MIN_IN+>, <+MAX_IN+>, sizeof(<+ITYPE+>)),
-              gr::io_signature::make(<+MIN_OUT+>, <+MAX_OUT+>, sizeof(<+OTYPE+>)))
+              gr::io_signature::make(1, 1, sizeof(float)),
+              gr::io_signature::make(1, 1, sizeof(float))
+	)
     {}
 
     /*
@@ -54,7 +55,7 @@ namespace gr {
     void
     square_ff_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
     {
-      /* <+forecast+> e.g. ninput_items_required[0] = noutput_items */
+      ninput_items_required[0] = noutput_items;
     }
 
     int
@@ -63,10 +64,12 @@ namespace gr {
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)
     {
-      const <+ITYPE+> *in = (const <+ITYPE+> *) input_items[0];
-      <+OTYPE+> *out = (<+OTYPE+> *) output_items[0];
+      const float *in = (const float *) input_items[0];
+      float *out = (float *) output_items[0];
 
-      // Do <+signal processing+>
+      for(int i=0; i<noutput_items; i++){
+        out[i] = in[i]*in[i];
+      }
       // Tell runtime system how many input items we consumed on
       // each input stream.
       consume_each (noutput_items);

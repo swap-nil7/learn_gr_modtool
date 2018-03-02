@@ -1,0 +1,40 @@
+Start testing: Mar 02 19:14 IST
+----------------------------------------------------------
+1/2 Testing: test_howto
+1/2 Test: test_howto
+Command: "/bin/sh" "/home/swapnil/Documents/modtool/gr-howto/build/lib/test_howto_test.sh"
+Directory: /home/swapnil/Documents/modtool/gr-howto/build/lib
+"test_howto" start time: Mar 02 19:14 IST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_howto" end time: Mar 02 19:14 IST
+"test_howto" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: qa_square_ff
+2/2 Test: qa_square_ff
+Command: "/bin/sh" "/home/swapnil/Documents/modtool/gr-howto/build/python/qa_square_ff_test.sh"
+Directory: /home/swapnil/Documents/modtool/gr-howto/build/python
+"qa_square_ff" start time: Mar 02 19:14 IST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"qa_square_ff" end time: Mar 02 19:14 IST
+"qa_square_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 02 19:14 IST
