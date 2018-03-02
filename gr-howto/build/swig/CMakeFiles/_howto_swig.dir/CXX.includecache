@@ -10,6 +10,12 @@
 gnuradio/attributes.h
 -
 
+../include/howto/square2_ff.h
+howto/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/howto/square_ff.h
 howto/api.h
 -
@@ -413,6 +419,8 @@ limits.h
 -
 howto/square_ff.h
 /home/swapnil/Documents/modtool/gr-howto/build/swig/howto/square_ff.h
+howto/square2_ff.h
+/home/swapnil/Documents/modtool/gr-howto/build/swig/howto/square2_ff.h
 float.h
 -
 math.h

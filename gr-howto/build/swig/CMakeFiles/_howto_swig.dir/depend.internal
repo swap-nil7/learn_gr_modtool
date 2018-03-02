@@ -3,6 +3,7 @@
 
 swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o
  ../include/howto/api.h
+ ../include/howto/square2_ff.h
  ../include/howto/square_ff.h
  /home/swapnil/Documents/default/include/gnuradio/api.h
  /home/swapnil/Documents/default/include/gnuradio/attributes.h

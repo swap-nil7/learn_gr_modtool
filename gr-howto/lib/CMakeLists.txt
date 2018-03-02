@@ -27,6 +27,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND howto_sources
     square_ff_impl.cc
+    square2_ff_impl.cc
 )
 
 set(howto_sources "${howto_sources}" PARENT_SCOPE)
@@ -61,6 +62,7 @@ include_directories(${CPPUNIT_INCLUDE_DIRS})
 list(APPEND test_howto_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_howto.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_howto.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_square2_ff.cc
 )
 
 add_executable(test-howto ${test_howto_sources})

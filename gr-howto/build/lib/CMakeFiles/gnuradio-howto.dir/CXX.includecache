@@ -10,6 +10,12 @@
 gnuradio/attributes.h
 -
 
+../include/howto/square2_ff.h
+howto/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/howto/square_ff.h
 howto/api.h
 -
@@ -228,6 +234,12 @@ gnuradio/api.h
 boost/shared_ptr.hpp
 -
 
+/home/swapnil/Documents/default/include/gnuradio/sync_block.h
+gnuradio/api.h
+-
+gnuradio/block.h
+-
+
 /home/swapnil/Documents/default/include/gnuradio/tags.h
 gnuradio/api.h
 -
@@ -298,6 +310,18 @@ pmt/pmt_sugar.h
 
 /home/swapnil/Documents/default/include/pmt/pmt_sugar.h
 gnuradio/messages/msg_accepter.h
+-
+
+/home/swapnil/Documents/modtool/gr-howto/lib/square2_ff_impl.cc
+config.h
+/home/swapnil/Documents/modtool/gr-howto/lib/config.h
+gnuradio/io_signature.h
+-
+square2_ff_impl.h
+/home/swapnil/Documents/modtool/gr-howto/lib/square2_ff_impl.h
+
+/home/swapnil/Documents/modtool/gr-howto/lib/square2_ff_impl.h
+howto/square2_ff.h
 -
 
 /home/swapnil/Documents/modtool/gr-howto/lib/square_ff_impl.cc

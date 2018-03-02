@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test-howto.dir/test_howto.cc.o"
   "CMakeFiles/test-howto.dir/qa_howto.cc.o"
+  "CMakeFiles/test-howto.dir/qa_square2_ff.cc.o"
   "test-howto.pdb"
   "test-howto"
 )

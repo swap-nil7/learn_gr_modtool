@@ -72,6 +72,7 @@ swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/gr_ctrlport.i
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/constants.i
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/block.i
+swig/howto_swig_swig_2d0df.cpp: swig/howto_swig_doc.i
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/runtime_swig.i
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/tagged_stream_block.i
 swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio/swig/buffer.i
@@ -91,14 +92,23 @@ swig/howto_swig_swig_2d0df.cpp: /home/swapnil/Documents/default/include/gnuradio
 swig/howto_swig_swig_2d0df.cpp: swig/howto_swig.tag
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && /usr/bin/cmake -E copy /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_swig_2d0df.cpp.in /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_swig_2d0df.cpp
 
+swig/howto_swig_doc.i: swig/howto_swig_doc_swig_docs/xml/index.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating python docstrings for howto_swig_doc"
+	cd /home/swapnil/Documents/modtool/gr-howto/docs/doxygen && /usr/bin/python2 -B /home/swapnil/Documents/modtool/gr-howto/docs/doxygen/swig_doc.py /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_doc_swig_docs/xml /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_doc.i
+
 swig/howto_swig.tag: swig/_howto_swig_swig_tag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating howto_swig.tag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating howto_swig.tag"
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && ./_howto_swig_swig_tag
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && /usr/bin/cmake -E touch /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig.tag
 
+swig/howto_swig_doc_swig_docs/xml/index.xml: swig/_howto_swig_doc_tag
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating doxygen xml for howto_swig_doc docs"
+	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && ./_howto_swig_doc_tag
+	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && /usr/local/bin/doxygen /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_doc_swig_docs/Doxyfile
+
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o: swig/CMakeFiles/howto_swig_swig_2d0df.dir/flags.make
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o: swig/howto_swig_swig_2d0df.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o"
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o -c /home/swapnil/Documents/modtool/gr-howto/build/swig/howto_swig_swig_2d0df.cpp
 
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.i: cmake_force
@@ -130,7 +140,7 @@ howto_swig_swig_2d0df_EXTERNAL_OBJECTS =
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable howto_swig_swig_2d0df"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swapnil/Documents/modtool/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable howto_swig_swig_2d0df"
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/howto_swig_swig_2d0df.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/swapnil/Documents/modtool/gr-howto/build/swig && /usr/bin/cmake -E make_directory /home/swapnil/Documents/modtool/gr-howto/build/swig
@@ -150,7 +160,9 @@ swig/CMakeFiles/howto_swig_swig_2d0df.dir/clean:
 .PHONY : swig/CMakeFiles/howto_swig_swig_2d0df.dir/clean
 
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_swig_2d0df.cpp
+swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_doc.i
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig.tag
+swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_doc_swig_docs/xml/index.xml
 	cd /home/swapnil/Documents/modtool/gr-howto/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/swapnil/Documents/modtool/gr-howto /home/swapnil/Documents/modtool/gr-howto/swig /home/swapnil/Documents/modtool/gr-howto/build /home/swapnil/Documents/modtool/gr-howto/build/swig /home/swapnil/Documents/modtool/gr-howto/build/swig/CMakeFiles/howto_swig_swig_2d0df.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend
 

@@ -26,11 +26,13 @@
  */
 
 #include "qa_howto.h"
+#include "qa_square2_ff.h"
 
 CppUnit::TestSuite *
 qa_howto::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("howto");
+  s->addTest(gr::howto::qa_square2_ff::suite());
 
   return s;
 }
